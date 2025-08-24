@@ -1,4 +1,3 @@
-import time
 from max31856 import MAX31856
 
 max31856 = MAX31856(0, 1, [2, 3, 0])

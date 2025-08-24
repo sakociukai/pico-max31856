@@ -137,7 +137,7 @@ class MAX31856:
         return data
 
     def read_cold_junction_temperature(self):
-        rxdata = max31856.get_register(COLD_JUNCTION_T_OFFSET_REGISTER, 3)
+        rxdata = self.get_register(COLD_JUNCTION_T_OFFSET_REGISTER, 3)
         offset = rxdata[0]
         [junc_msb, junc_lsb] = [rxdata[1], rxdata[2]]
 
